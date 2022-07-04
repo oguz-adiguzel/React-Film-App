@@ -1,38 +1,216 @@
-.App {
-  text-align: center;
+/* You can add global styles to this file, and also import other style files */
+@import "~bootstrap/dist/css/bootstrap.css";
+:root{
+    --redColor:#e50914;
 }
-
-.App-logo {
-  height: 40vmin;
-  pointer-events: none;
-}
-
-@media (prefers-reduced-motion: no-preference) {
-  .App-logo {
-    animation: App-logo-spin infinite 20s linear;
+:root {
+    --blue-dark: #112B3C;
+    --blue: #205375;
+    --orange: #F66B0E;
+    --grey-light: #EFEFEF;
   }
+.nav-img{
+    width: 13rem;
+    height: 7rem;
 }
 
-.App-header {
-  background-color: #282c34;
-  min-height: 100vh;
+.bg-header{
+    
+    background-position: center;
+    background-repeat: no-repeat;
+    
+    height: 105vh;
+     
+    background: linear-gradient(0deg, rgba(8,6,2,0.06292023645395661) 0%, rgba(1,1,1,0.7155813008797269) 0%),url('https://assets.nflxext.com/ffe/siteui/vlv3/970e664f-2df4-47ce-b4fa-446082f5abc1/8dbc9f27-af3e-4f34-93ca-27c9f07b96f2/TR-tr-20220523-popsignuptwoweeks-perspective_alpha_website_large.jpg');;
+}
+
+.bg-userpage{
+  height: 200vh;
+}
+
+#sign-in-card{
+  height: auto;
+  background-color: red;
+  padding: 3.5rem 5rem 2rem 5rem;
+  background: linear-gradient(0deg, rgba(8,6,2,0.06292023645395661) 0%, rgba(1,1,1,0.7155813008797269) 0%);;
+}
+.sign-in-input{
+  width: 100%;
+  height: 3.5rem;
+  font-size: 1.045rem;
+  
+}
+.sign-in-button{
+  width: 100%;
+  background-color:var(--redColor) ;
+  padding: .8rem 0;
+}
+.warning{
+  font-size: .9rem;
+  color: #e87c03;
+}
+.input-warning{
+  border-bottom: 3px solid #e87c03;
+}
+input{
+  border: none;
+}
+
+
+
+
+/************ Userpage ************/
+
+
+.card {
+  position: absolute;
+  top: 50%;
+  left: 50%;
+  transform: translate(-50%, -50%);
+  width: 300px;
+  height: 450px;
+  background: #000;
+  overflow: hidden;
+  box-shadow: 0 5px 10px rgba(0,0,0,0.5);
+}
+
+.card .poster {
+  position: relative;
+  overflow: hidden;
+}
+
+
+.card .poster:before {
+  content: "";
+  position: absolute;
+  bottom: -200px;
+  left: 0;
+  width: 100%;
+  height: 100%;
+  background: linear-gradient(0deg, #000 50%, transparent);
+  transition: 0.5s;
+  z-index: 1;
+}
+
+.card:hover .poster:before {
+  bottom: 0;
+}
+
+.card .poster img {
+  width: 100%;
+  transition: 0.5s;
+}
+
+.card:hover .poster img {
+  filter: blur(5px);
+  transform: translateY(-50px);
+}
+
+.details {
+  position: absolute;
+  padding: 20px;
+  width: 100%;
+  height: 76%;
+  bottom: -200px;
+  left: 0;
+  box-sizing: border-box;
+  transition: 0.5s;
+  z-index: 2;
+}
+
+.card:hover .details {
+  bottom: 0;
+}
+
+.details h2 {
+  color: #fff;
+  margin: 0;
+  padding: 0;
+  font-size: 20px;
+}
+
+.details h2 span {
+  font-size: 14px;
+  color: orange;
+}
+
+.rating {
+  position: relative;
+  padding: 5px 0;
+}
+
+.rating .fas,
+.rating .far {
+  color: gold;
+  margin-right: 2px;
+  font-size: 16px;
+}
+
+.rating span {
+  color: #fff;
+  padding: 0 5px;
+}
+
+.tags {
+  position: relative;
+  margin-top: 5px;
+}
+
+.tags span {
+  padding: 2px 5px;
+  margin-right: 2px;
+  color: #fff;
+  display: inline-block;
+  border-radius: 4px;
+}
+
+.tags span.fantasy {
+  background: mediumpurple;
+}
+
+.tags span.mystery {
+  background: mediumturquoise;
+}
+
+.info {
+  color: #fff;
+}
+
+.info p {
+  margin: 15px 0 10px;
+}
+
+.cast {
+  position: relative;
+}
+
+.cast h4 {
+  margin: 0;
+  padding: 0;
+  font-size: 20px;
+  color: yellow;
+}
+
+.cast ul {
+  margin: 10px 0 0;
+  padding: 0;
   display: flex;
-  flex-direction: column;
-  align-items: center;
-  justify-content: center;
-  font-size: calc(10px + 2vmin);
-  color: white;
 }
 
-.App-link {
-  color: #61dafb;
+.cast ul li {
+  list-style: none;
+  width: 35px;
+  height: 35px;
+  background: #fff;
+  border-radius: 50%;
+  overflow: hidden;
+  margin-right: 6px;
+  border: 2px solid #fff;
 }
 
-@keyframes App-logo-spin {
-  from {
-    transform: rotate(0deg);
-  }
-  to {
-    transform: rotate(360deg);
-  }
+.cast ul li img {
+  width: 100%;
+}
+.card-edit{
+  width: 100%;
 }

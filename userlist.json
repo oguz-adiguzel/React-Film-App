@@ -1,0 +1,67 @@
+{
+  "userList": [
+    {
+      "id": 1,
+      "email": "ogzdgzl@hotmail.com",
+      "password": "123"
+    },
+    {
+      "id": 2,
+      "email": "oguz_adiguzel@outlook.com",
+      "password": "123"
+    },
+    {
+      "id": 3,
+      "email": "asd@hotmail.com",
+      "password": "asd"
+    }
+  ],
+  "movies": [
+    {
+      "id": 1,
+      "name": "Erşan Kuneri",
+      "director": "Cem Yılmaz",
+      "actors": [
+        "Cem Yılmaz",
+        "Zafer Algöz",
+        "Ezgi Mola",
+        "Çağlar Çorumlu",
+        "Bülent Şakrak"
+      ],
+      "point": 9,
+      "posterUrl": "https://tr.web.img3.acsta.net/pictures/22/05/03/11/10/3188983.jpg",
+      "title": "Erşan Kuneri, 13 Mayıs 2022 tarihinde Netflix'te yayınlanan komedi türündeki Türk internet dizisidir."
+    },
+    {
+      "id": 2,
+      "name": "G.O.R.A",
+      "director": "Ömer Faruk Sorak",
+      "actors": [
+        "Cem Yılmaz",
+        "Ozan Güven",
+        "Özkan Uğur"
+      ],
+      "point": 8,
+      "posterUrl": "https://media-cache.cinematerial.com/p/500x/77a9jaiz/gora-turkish-movie-poster.jpg?v=1574674473",
+      "title": "G.O.R.A., senaryosunu Cem Yılmaz'ın yazdığı, yönetmenliğini Ömer Faruk Sorak'ın yaptığı, bilimkurgu ve komedi türlerindeki 2004 çıkışlı Türk filmidir."
+    },
+    {
+      "id": 3,
+      "name": "A.R.O.G",
+      "director": "Ali Taner Baltacı",
+      "actors": "Cem Yılmaz",
+      "point": "9",
+      "posterUrl": "https://m.media-amazon.com/images/M/MV5BZjgxY2JkNjEtZmQ2NC00YWM4LWE5ZjEtYzg5MjY2Yjc5Y2ZmXkEyXkFqcGdeQXVyMjExNjgyMTc@._V1_FMjpg_UX1000_.jpg",
+      "title": "Cem Yılmaz'ın yazıp Ali Taner Baltacı ile birlikte yönettiği, 2008 yapımı bilimkurgu ve fantastik komedi filmidir."
+    },
+    {
+      "id": 4,
+      "name": "Yahşi Batı",
+      "director": "Ömer Faruk Sorak",
+      "actors": "Cem Yılmaz",
+      "point": "9",
+      "posterUrl": "https://images-wixmp-ed30a86b8c4ca887773594c2.wixmp.com/f/ef0f0e1c-80d9-4f5a-9298-d7e7728fd7a5/d2jzoqb-f0b21409-020b-4b60-a180-170fb4e7aa97.jpg?token=eyJ0eXAiOiJKV1QiLCJhbGciOiJIUzI1NiJ9.eyJzdWIiOiJ1cm46YXBwOjdlMGQxODg5ODIyNjQzNzNhNWYwZDQxNWVhMGQyNmUwIiwiaXNzIjoidXJuOmFwcDo3ZTBkMTg4OTgyMjY0MzczYTVmMGQ0MTVlYTBkMjZlMCIsIm9iaiI6W1t7InBhdGgiOiJcL2ZcL2VmMGYwZTFjLTgwZDktNGY1YS05Mjk4LWQ3ZTc3MjhmZDdhNVwvZDJqem9xYi1mMGIyMTQwOS0wMjBiLTRiNjAtYTE4MC0xNzBmYjRlN2FhOTcuanBnIn1dXSwiYXVkIjpbInVybjpzZXJ2aWNlOmZpbGUuZG93bmxvYWQiXX0.bwa-RUf-Pcs0aj1gKclrhIEuZFfuddYN9CnmG1cb7I8",
+      "title": "fdsfegfdged"
+    }
+  ]
+}
