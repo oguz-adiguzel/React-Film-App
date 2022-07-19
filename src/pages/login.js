@@ -1,7 +1,9 @@
 import { useFormik } from "formik";
-import { useEffect, useState } from 'react'
+import { useEffect, useState } from 'react';
 import { UserlistService } from "../userlistServices";
 import {  useNavigate } from "react-router-dom";
+import { useAuth } from "../context/authContext";
+
 
 function Login() {
     const [loginControl,setLoginControl] =useState(false)
@@ -9,15 +11,17 @@ function Login() {
     const [userList, setUserList] = useState([]);
     const [form, setForm] = useState([])
     const service = new UserlistService();
+   
+
+    const {setIsAuth} = useAuth();
 
     useEffect(() => {
         getUser()
     }, []);
-
+ 
     useEffect(() => {
         if (form.email) {
             loginUSer()
-            console.log(form);
         }
     }, [form])
 
@@ -31,7 +35,10 @@ function Login() {
         let newUser = userList.find(item => (
             item.email === form.email && item.password === form.password
         ))
+        
         if (newUser) {
+            setIsAuth('true')
+            localStorage.setItem('userType',newUser.userType)
             alert('Giriş Başarılı');
             navigate('/userpage')
         } else {
@@ -70,7 +77,7 @@ function Login() {
                             {
                               loginControl && <p className="warning mt-2">Lütfen geçerli bir telefon numarası veya e‑posta adresi girin.</p>
                             } 
-                            <input value={values.password} name="password" onChange={handleChange} className="sign-in-input bg-dark rounded p-3 mt-4" type="text" placeholder="Parola" />
+                            <input value={values.password} name="password" onChange={handleChange} className="sign-in-input bg-dark rounded p-3 mt-4" type="password" placeholder="Parola" />
                             <button type="submit" className="btn btn-danger sign-in-button fw-bold mt-5">Oturum Aç</button>
                             <div className="d-flex justify-content-between mt-2">
                                 <div className="form-check ">

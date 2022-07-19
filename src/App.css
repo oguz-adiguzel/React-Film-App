@@ -214,3 +214,77 @@ input{
 .card-edit{
   width: 100%;
 }
+
+
+
+
+
+
+#sing-in-btn{
+  width: 7rem;
+  background-color: var(--redColor);
+}
+.main-title{
+  font-size: 4rem;
+}
+.subtitle{
+  font-size: 1.625rem;
+}
+.info{
+  font-size: 1.2rem;
+}
+#header-input{
+  height: 4.3rem;
+  width: 75%;
+  padding: .5rem;
+}
+#start-button{
+  width: 25%;
+  background-color: var(--redColor);
+}
+.header-bottom{
+  margin-bottom: 9rem;
+}
+
+
+.newuser-page{
+  height: 100vh;
+}
+.signİn{
+  font-size: 1.3rem;
+  font-weight:600;
+  text-decoration: none;
+  color: black;
+}
+
+.signİn:hover{
+  border-bottom: 2px solid black;
+  cursor: pointer;
+  
+}
+
+.title{
+  font-size: 2.2rem;
+  font-weight: 600;
+}   
+
+.subtitle{
+  font-size: 1.2rem;
+  font-weight: 400;
+}
+
+.newuser-input{
+  width: 100%;
+  padding: 1rem;
+}
+
+.newuser-button{
+  width: 100%;
+  padding: 1rem 0;
+  border-radius: .3rem;
+  border: none;
+  background-color: var(--redColor);
+  color: white;
+  font-size: 1.3rem;
+  font-weight: 400;
+}

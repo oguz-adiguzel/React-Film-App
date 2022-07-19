@@ -1,30 +1,34 @@
 import { useFormik } from "formik";
 import { MovielistServices } from "../movielistServices";
-import {  useNavigate } from "react-router-dom";
+import { useNavigate } from "react-router-dom";
 import validation from "../validations";
-
+import { ToastContainer, toast, Zoom, Bounce } from 'react-toastify';
+import 'react-toastify/dist/ReactToastify.css';
 
 
 function AddMovies() {
     const services = new MovielistServices();
     const navigate = useNavigate()
-    const addMovies =(values)=>{
+    const addMovies = (values) => {
         let model = {
-            id:null,
-            name:values.name,
-            director:values.director,
-            actors:values.actors,
-            point:values.point,
-            posterUrl:values.posterUrl,
-            title:values.title
+            id: null,
+            name: values.name,
+            director: values.director,
+            actors: values.actors,
+            point: values.point,
+            posterUrl: values.posterUrl,
+            title: values.title
         }
 
-        services.addMovies(model).then(()=>{
-            navigate('/userpage')
+        services.addMovies(model).then(() => {
+            toast.success('Film Eklendi');
+            setTimeout(() => {
+                navigate('/userpage')
+            }, 3000);
         })
     }
 
-    const { handleSubmit, handleChange, values,errors,touched,handleBlur } = useFormik({
+    const { handleSubmit, handleChange, values, errors, touched, handleBlur } = useFormik({
         initialValues: {
             name: '',
             director: '',
@@ -36,10 +40,11 @@ function AddMovies() {
         onSubmit: (values) => {
             console.log(values);
             addMovies(values)
-        },validationSchema:validation
+        }, validationSchema: validation
     })
 
     return (<>
+        <ToastContainer />
         <div className="container-fluid bg-header">
             <div className="row">
                 <div className="col-6">
@@ -72,7 +77,7 @@ function AddMovies() {
                     </div>
                     <div className="col-5 mt-5">
                         <label htmlFor="point" className="form-label text-danger fs-4">Puan</label>
-                        <input name="point" value={values.point} onChange={handleChange} type="text" className="form-control" id="point" onBlur={handleBlur}/>
+                        <input name="point" value={values.point} onChange={handleChange} type="text" className="form-control" id="point" onBlur={handleBlur} />
                         {
                             touched.point && errors.point && <p className="warning mt-2">{errors.point}</p>
                         }
@@ -86,11 +91,11 @@ function AddMovies() {
                     </div>
                     <div className="col-5 mt-5">
                         <div className="form-floating mt-4">
-                            <textarea value={values.title} onChange={handleChange} name="title" className="form-control"  id="title" onBlur={handleBlur}></textarea>
+                            <textarea value={values.title} onChange={handleChange} name="title" className="form-control" id="title" onBlur={handleBlur}></textarea>
                             <label className="text-danger" htmlFor="title">Açıklama</label>
                             {
-                            touched.title && errors.title && <p className="warning mt-2">{errors.title}</p>
-                        }
+                                touched.title && errors.title && <p className="warning mt-2">{errors.title}</p>
+                            }
                         </div>
                     </div>
                     <div className="col-10 mt-5">

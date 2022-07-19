@@ -7,4 +7,7 @@ export class UserlistService {
         const response = await axios.get(this.baseUrl);
         return response.data;
     }
+    async postUserList(model){
+        await axios.post(this.baseUrl,model);
+    }
 }
