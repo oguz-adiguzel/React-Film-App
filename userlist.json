@@ -40,6 +40,42 @@
       "point": 9,
       "posterUrl": "https://tr.web.img3.acsta.net/pictures/22/05/03/11/10/3188983.jpg",
       "title": "Erşan Kuneri, 13 Mayıs 2022 tarihinde Netflix'te yayınlanan komedi türündeki Türk internet dizisidir."
+    },
+    {
+      "id": 2,
+      "name": "A.R.O.G",
+      "director": "Ali Taner Baltacı",
+      "actors": "Cem Yılmaz",
+      "point": "9",
+      "posterUrl": "https://m.media-amazon.com/images/M/MV5BZjgxY2JkNjEtZmQ2NC00YWM4LWE5ZjEtYzg5MjY2Yjc5Y2ZmXkEyXkFqcGdeQXVyMjExNjgyMTc@._V1_.jpg",
+      "title": "Film, G.O.R.A. filminin ana karakteri Arif'in Yontma Taş Devri'nde geçen yeni macerasını konu almaktadır. 5 Aralık 2008 tarihinde Türkiye'deki sinemalarda gösterime girmiştir."
+    },
+    {
+      "id": 3,
+      "name": "G.O.R.A",
+      "director": "Ömer Faruk Sorak",
+      "actors": "Cem Yılmaz",
+      "point": "9",
+      "posterUrl": "https://images.justwatch.com/poster/156348565/s332/g-o-r-a.%7Bformat%7D",
+      "title": "G.O.R.A., senaryosunu Cem Yılmaz'ın yazdığı, yönetmenliğini Ömer Faruk Sorak'ın yaptığı, bilimkurgu ve komedi türlerindeki 2004 çıkışlı Türk filmidir."
+    },
+    {
+      "id": 4,
+      "name": "Yahşi Batı",
+      "director": "Ömer Faruk Sorak",
+      "actors": "Cem Yılmaz",
+      "point": "9",
+      "posterUrl": "https://static.boxofficeturkiye.com/movie//poster/full/97/2010297-900345837.jpg",
+      "title": "Yahşi Batı, Ömer Faruk Sorak'ın yönetmenliğini, Cem Yılmaz'ın ise senaristliğini ve başrolünü üstlendiği, 2009 yılı yapımı bir Türk komedi-western filmidir."
+    },
+    {
+      "id": 5,
+      "name": "Hokkabaz",
+      "director": "Ali Taner Baltacı",
+      "actors": "Cem Yılmaz",
+      "point": "9",
+      "posterUrl": "https://www.biyografi.info/sinema/afis/id-324.jpg",
+      "title": " Cem Yılmaz'ın senaryosunu yazdığı ve Ali Taner Baltacı ile ortak yönettiği sinema filmidir. Filmde, bir hokkabaz ve yardımcısının turne sırasında yaşadıkları maceralar anlatılmaktadır"
     }
   ],
   "myMovieList": []

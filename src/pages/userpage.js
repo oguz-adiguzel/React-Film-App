@@ -62,9 +62,9 @@ function Userpage() {
                     </div>
                     <div className="col-6 d-flex justify-content-end align-items-center">
                         {
-                            local === 'admin' && <button onClick={() => navigate('/addMovie')} className='btn btn-warning text-danger'>Yeni Film Ekle</button>
+                            local === 'admin' && <button onClick={() => navigate('/addMovie')} className='btn btn-warning text-danger me-3'>Yeni Film Ekle</button>
                         }
-                        <button onClick={exit} className='btn btn-danger text-warning ms-3'>Çıkış</button>
+                        <button onClick={exit} className='btn btn-danger text-warning me-3'>Çıkış</button>
                         {
                             local !== 'admin' && <button onClick={() => navigate('/myMovie')} className='btn btn-success text-warning'>Listem</button>
                         }
